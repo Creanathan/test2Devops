@@ -12,3 +12,13 @@ jobs:
             run: date
           - name: third
             run: timedatectl
+
+    validator:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/Checkout@V6
+            - name: validator
+              uses: actions/html5-validator
+              with:
+                root: ./
