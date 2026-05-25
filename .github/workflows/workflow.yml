@@ -16,8 +16,8 @@ jobs:
     validator:
         runs-on: ubuntu-latest
         steps:
-            - name: checkout
-              uses: actions/Checkout@V6
+            - name: Checkout
+              uses: actions/checkout@v6.0.2
             - name: validator
               uses: Cyb3r-Jak3/html5validator-action@v7.2.0
               with:
