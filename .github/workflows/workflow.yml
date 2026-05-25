@@ -1,12 +1,14 @@
-name: test output hostname
+name: time printer
 
 on: push
 
 jobs:
-    display-hostname:
+    printer:
         runs-on: ubuntu-latest
         steps:
-            - name: run hostname command
-              run: hostname
-            - name: test system info
-              run: uname  
+          - name: time printer
+            run: time -p
+          - name: second printer
+            run: date
+          - name: third
+            run: timedatectl
