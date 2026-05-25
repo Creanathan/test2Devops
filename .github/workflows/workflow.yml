@@ -38,8 +38,7 @@ jobs:
                 password: ${{ secrets.DOCKERHUB_PASSWORD }}
             - name: push
               run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/test-website:latest
-            - name: Deploy
-            - name: Deploy
+            - name: Deploy it to pages
               uses: peaceiris/actions-gh-pages@v4
               with:
                 github_token: ${{ secrets.GITHUB_TOKEN }}
