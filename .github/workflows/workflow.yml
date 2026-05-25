@@ -1,4 +1,4 @@
-name: time printer
+name: pipeline
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: write
-  
+
 jobs:
     printer:
         runs-on: ubuntu-latest
