@@ -37,4 +37,4 @@ jobs:
                 username: ${{ secrets.DOCKERHUB_USERNAME }}
                 password: ${{ secrets.DOCKERHUB_PASSWORD }}
             - name: push
-              run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/website-test:latest
+              run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/test-website:latest
