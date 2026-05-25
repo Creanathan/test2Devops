@@ -19,6 +19,6 @@ jobs:
             - name: checkout
               uses: actions/Checkout@V6
             - name: validator
-              uses: actions/html5-validator
+              uses: Cyb3r-Jak3/html5validator-action
               with:
                 root: ./
