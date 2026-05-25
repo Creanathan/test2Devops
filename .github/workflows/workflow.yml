@@ -8,3 +8,5 @@ jobs:
         steps:
             - name: run hostname command
               run: hostname
+            - name: test system info
+              run: uname  
