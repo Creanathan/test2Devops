@@ -1,8 +1,12 @@
 name: time printer
 
-on: push
+on:
+  push:
+    branches: [ main ]
 
-
+permissions:
+  contents: write
+  
 jobs:
     printer:
         runs-on: ubuntu-latest
